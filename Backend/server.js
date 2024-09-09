@@ -21,7 +21,9 @@ app.post('/signup'),(req,res)=>{
         req.body.eid,
         req.body.phno,
         req.body.gender,
-        req.body.bdate
+        req.body.bdate,
+        req.bady.password,
+        req.body.cpassword
     ]
     
     db.query(sql,[values],(err,data)=> {
@@ -35,5 +37,5 @@ app.post('/signup'),(req,res)=>{
 
 
 app.listen(8081,()=>{
-    console.log("listen")
+    console.log("MCA_DEPT")
 })
