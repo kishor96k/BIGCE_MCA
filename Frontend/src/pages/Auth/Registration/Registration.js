@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import studimg from "../../../assets/images/studentone.jpg";
 import { Link } from "react-router-dom";
 import "../Registration/Registration.css";
-
+import axios from "axios"
 export default function Registration() {
   const [firstname, setFirstName] = useState("");
   const [lastname, setLastName] = useState("");
@@ -231,6 +231,20 @@ export default function Registration() {
     ) {
       return;
     }
+
+    axios.post('http://localhost:8081/signup', {
+     fname:firstname,
+     lname:lastname,
+     eid:email,
+     phno:number,
+     gender:gender,
+     bdate:date,
+     password:password,
+     cpassword:confirmpassword
+
+  }, ).then((res) => {
+      console.log(res)
+    });
 
     // Handle form submission
     console.log("Form submitted:", {
