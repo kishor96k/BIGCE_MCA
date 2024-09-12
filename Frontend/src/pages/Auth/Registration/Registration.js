@@ -233,14 +233,14 @@ export default function Registration() {
     }
 
     axios.post('http://localhost:8081/signup', {
-     fname:firstname,
-     lname:lastname,
-     eid:email,
-     phno:number,
-     gender:gender,
-     bdate:date,
-     password:password,
-     cpassword:confirmpassword
+      FirstName:firstname,
+      LastName:lastname,
+      Email:email,
+      Phone:number,
+      Gender:gender,
+      Birthdate:date,
+      Password:password,
+      Cpassword:confirmpassword
 
   }, ).then((res) => {
       console.log(res)
