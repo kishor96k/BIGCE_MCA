@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './Programs.css';
 import groupphoto from '../../assets/freshersparty/Groupphoto.jpeg';
 import guestphoto from '../../assets/freshersparty/Guestphoto.jpeg';
+import fresherswinners from '../../assets/freshersparty/fresherswinner.jpg';
+import freshersfungame from '../../assets/freshersparty/freshersfungame.jpg';
 import technowinner from '../../assets/technofest/technowinner.png';
 import technowguest from '../../assets/technofest/technoguest.png';
 import projectshow from '../../assets/technofest/prjshowcase.png';
@@ -23,14 +25,14 @@ const Programs = () => {
       date: "September 19, 2023",
       description:
         "Students participated in engaging games and activities, fostering a spirit of teamwork and friendship.",
-      image: "https://via.placeholder.com/400",
+      image: freshersfungame,
     },
     {
       title: "Mr. Fresher & Miss Fresher",
       date: "September 19, 2023",
       description:
         "The most awaited moment of the event – crowning Mr. Fresher and Miss Fresher, recognizing outstanding newcomers.",
-      image: "https://via.placeholder.com/400",
+      image: fresherswinners,
     },
     {
       title: "Group Photo & Memories",
