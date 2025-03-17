@@ -141,14 +141,15 @@ const notesData = {
 
 export default function About() {
     const [selectedNotesSemester, setSelectedNotesSemester] = useState(null);
+    const [selectedSubject, setSelectedSubject] = useState(null);
 
     return (
         <div className='container my-5'>
             <h1 className='text-center'>MCA Syllabus & Notes</h1>
 
             {/* MCA Syllabus Section */}
-            <div className='card shadow-lg p-4 my4'>
-                <h3 className='text-primary'>MCA Syllabus</h3>
+            <div className='card shadow-lg p-4 my-4'>
+                <h3 className='text-secondary'>MCA Syllabus</h3>
                 <div>
                     <a href={syllabusData["MCA Syllabus"][""][0].pdf} download className='btn btn-primary'>
                         Download Syllabus
@@ -158,7 +159,7 @@ export default function About() {
 
             {/* MCA Notes Section */}
             <div className='card shadow-lg p-4 my-4'>
-                <h3 className='text-primary'>MCA Notes</h3>
+                <h3 className='text-secondary'>MCA Notes</h3>
                 <div className='accordion' id='notesAccordion'>
                     {Object.keys(notesData).map((semester, index) => (
                         <div className='accordion-item' key={index}>
@@ -166,7 +167,10 @@ export default function About() {
                                 <button 
                                     className='accordion-button' 
                                     type='button' 
-                                    onClick={() => setSelectedNotesSemester(selectedNotesSemester === semester ? null : semester)}>
+                                    onClick={() => {
+                                        setSelectedNotesSemester(selectedNotesSemester === semester ? null : semester);
+                                        setSelectedSubject(null);
+                                    }}>
                                     {semester}
                                 </button>
                             </h2>
@@ -174,21 +178,27 @@ export default function About() {
                                 <div className='accordion-body'>
                                     {Object.keys(notesData[semester]).map((subject, idx) => (
                                         <div key={idx} className='mb-3'>
-                                            <h5>{subject}</h5>
-                                            <ul className='list-group'>
-                                                {notesData[semester][subject].map((unit, uIdx) => (
-                                                    <li className='list-group-item d-flex justify-content-between' key={uIdx}>
-                                                        {unit.name}
-                                                        <a 
-                                                            href={unit.pdf || "#"} 
-                                                            download 
-                                                            className={`btn btn-primary btn-sm ${!unit.pdf ? "disabled" : ""}`}
-                                                        >
-                                                            {unit.pdf ? "Download" : "Notes Not Available"}
-                                                        </a>
-                                                    </li>
-                                                ))}
-                                            </ul>
+                                            <button 
+                                                className='btn btn-secondary dropdown-toggle w-100 text-start d-flex justify-content-between align-items-center' 
+                                                onClick={() => setSelectedSubject(selectedSubject === subject ? null : subject)}>
+                                                {subject}
+                                            </button>
+                                            {selectedSubject === subject && (
+                                                <ul className='list-group mt-2'>
+                                                    {notesData[semester][subject].map((unit, uIdx) => (
+                                                        <li className='list-group-item d-flex justify-content-between align-items-center' key={uIdx}>
+                                                            {unit.name}
+                                                            <a 
+                                                                href={unit.pdf || "#"} 
+                                                                download 
+                                                                className={`btn btn-primary btn-sm ${!unit.pdf ? "disabled" : ""}`}
+                                                            >
+                                                                {unit.pdf ? "Download" : "Notes Not Available"}
+                                                            </a>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            )}
                                         </div>
                                     ))}
                                 </div>

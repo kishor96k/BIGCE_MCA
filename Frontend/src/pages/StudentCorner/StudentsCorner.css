@@ -12,7 +12,7 @@ h2 {
 }
 
 .card {
-  background: #4e8cde;
+  background: #e6944d;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 10px;
@@ -28,19 +28,19 @@ h2 {
 }
 
 .btn-outline-primary {
-  color: #007bff;
+  color: #e08286;
   border: 2px solid black;
   background: transparent;
 }
 
 .btn-outline-primary:hover {
   background: #03e653;
-  color: white;
+  color: black;
 }
 
 .btn-success {
   background: #28a745;
-  color: white;
+  color: rgb(4, 4, 4);
 }
 
 .btn-success:hover {
@@ -57,7 +57,7 @@ h2 {
 .list-group-item:hover {
 border-color: black;
 border-radius: 5px;
-color: red;
+color: rgb(250, 65, 65);
 
 }
 .row {
