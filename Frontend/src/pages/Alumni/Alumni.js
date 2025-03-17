@@ -1,5 +1,5 @@
 import React from 'react';
-import './Alumni.css';
+// import './Alumni.css';
 
 const Alumni = () => {
   return (
