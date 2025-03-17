@@ -7,7 +7,7 @@ import "../components/Navbar.css";
 export default function Navbar() {
   return (
     <>
-      <nav class="navbar navbar-expand-lg py-4 py-lg-0 shadow">
+      <nav className="navbar navbar-expand-lg py-4 py-lg-0 shadow">
         <div class="container px-4">
           <div className="image">
             <img src={BIGCE} height={(50)} width={(50)} alt="" />
