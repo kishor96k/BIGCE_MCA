@@ -1,116 +1,46 @@
-import React from 'react'
-import './Faculty.css'
-import HOD from '../../assets/images/team1.png'
-import Prof from '../../assets/images/team3.png'
-import Prof1 from '../../assets/images/team4.jpg'
-import Prof2 from '../../assets/images/team2.png'
+import React from 'react';
+import './Faculty.css';
+import HOD from '../../assets/images/HOD.jpeg';
+import Prof from '../../assets/images/AP.jpeg';
+import Prof1 from '../../assets/images/JP.jpeg';
+import Prof2 from '../../assets/images/Kishor.jpeg';
 
 export default function Faculty() {
+  const facultyMembers = [
+    { img: HOD, name: "Somshekhar Aland", position: "Head of the Department" },
+    { img: Prof, name: "Aarti Patel", position: "Asst. Professor" },
+    { img: Prof1, name: "Jagdish Patil", position: "Asst. Professor" },
+    { img: Prof2, name: "Kishor Chavan", position: "Asst. Professor" }
+  ];
+
   return (
- <>
-   <section id="team" class="team section-bg">
-        <div class="container">
-  
-          <div class="section-title">
-            <h2>Team</h2>
-            <div class="underline"></div>
-            <p>Meet Our Qualified Team</p>
-          </div>
-  
-          <div class="row">
-  
-            <div class="col-lg-6">
-              <div class="member d-flex align-items-start" >
-                <div class="teampic"><img src={HOD}class="img-fluid" alt=""/></div>
-                <div class="member-info">
-                  <h4>Somshekhar Aland</h4>
-                  <span>Head of the Department</span>
-                  
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, ducimus.</p>
-                  <div class="social">
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                    <a href=""> <i class="bi bi-whatsapp"></i> </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-lg-6 mt-4 mt-lg-0">
-              <div class="member d-flex align-items-start" >
-                <div class="teampic"><img src={Prof}class="img-fluid" alt=""/></div>
-                <div class="member-info">
-                  <h4>Aarti Patel</h4>
-                  <span>Asst.Professor</span>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, ducimus.</p>
-                  <div class="social">
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                    <a href=""> <i class="bi bi-whatsapp"></i> </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-lg-6 mt-4">
-              <div class="member d-flex align-items-start" >
-                <div class="teampic"><img src={Prof1} class="img-fluid" alt=""/></div>
-                <div class="member-info">
-                  <h4>Durga Bhosale</h4>
-                  <span>Asst.Professor</span>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, ducimus.</p>
-                  <div class="social">
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                    <a href=""> <i class="bi bi-whatsapp"></i> </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-lg-6 mt-4">
-              <div class="member d-flex align-items-start" >
-                <div class="teampic"><img src={Prof2} class="img-fluid" alt=""/></div>
-                <div class="member-info">
-                  <h4>Jagdish Patil</h4>
-                  <span>Asst.Professor</span>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, ducimus.</p>
-                  <div class="social">
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                    <a href=""> <i class="bi bi-whatsapp"></i> </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            
-            <div class="col-lg-6 mt-4">
-              <div class="member d-flex align-items-start" >
-                <div class="teampic"><img src={Prof2} class="img-fluid" alt=""/></div>
-                <div class="member-info">
-                  <h4>Kishor Chavan </h4>
-                  <span>Asst.Professor</span>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, ducimus.</p>
-                  <div class="social">
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                    <a href=""> <i class="bi bi-whatsapp"></i> </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-  
-          </div>
-  
+    <section id="faculty" className="faculty-section">
+      <div className="container">
+        <div className="section-title">
+          <h2>Meet Our Faculty</h2>
+          <div className="underline"></div>
+          <p>Highly qualified professionals dedicated to excellence in education.</p>
         </div>
-      </section>
-</>
-  )
+
+        <div className="faculty-grid">
+          {facultyMembers.map((faculty, index) => (
+            <div key={index} className="faculty-card">
+              <img src={faculty.img} alt={faculty.name} className="faculty-img" />
+              <div className="faculty-info">
+                <h4>{faculty.name}</h4>
+                <span>{faculty.position}</span>
+                <p>Passionate about delivering quality education and mentoring students.</p>
+                <div className="social-icons">
+                  <a href="#"><i className="bi bi-facebook"></i></a>
+                  <a href="#"><i className="bi bi-instagram"></i></a>
+                  <a href="#"><i className="bi bi-linkedin"></i></a>
+                  <a href="#"><i className="bi bi-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }
