@@ -1,0 +1,33 @@
+/* Form Styling */
+.form-outline {
+    text-align: left;
+  }
+  
+  /* Ensure input fields align to the left */
+  .form-control {
+    text-align: left !important;
+  }
+  
+  /* Adjust label alignment */
+  .form-label {
+    text-align: left !important;
+    display: block;
+    font-weight: bold;
+  }
+  
+  /* Align button to the left */
+  .btn-lg {
+    width: 150px;
+  }
+  
+  /* Make form responsive */
+  @media (max-width: 768px) {
+    .form-outline {
+      width: 100%;
+    }
+    
+    .btn-lg {
+      width: 100%;
+    }
+  }
+  

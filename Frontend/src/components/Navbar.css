@@ -13,13 +13,13 @@
 
 /* College Name Styling */
 .college-name {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: rgb(255, 255, 255);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 350px;
+  max-width: 380px;
 }
 
 /* Navbar Links */

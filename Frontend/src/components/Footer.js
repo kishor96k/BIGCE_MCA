@@ -34,7 +34,8 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <p>&copy; 2024 MCA.BIGCE. All rights reserved.</p>
+                <p>&copy; All Rights Reserved MCA Department</p>
+                <p>Designed & Developed by Jagdish Patil & Kishor Chavan</p>
             </footer>
 
         </>

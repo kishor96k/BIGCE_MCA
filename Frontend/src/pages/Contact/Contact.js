@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState, useEffect } from "react";
 import contactme from "../../assets/images/contact_me.png";
+import './Contact.css';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -108,7 +109,7 @@ const Contact = () => {
     <>
       <section className="h-100">
         <div className="container py-5 h-100">
-          <div className="row d-flex justify-content-center align-items-center h-100">
+          <div className="row d-flex justify-content-center  h-100">
             <div className="col">
               <div className="card card-registration my-4">
                 <div className="row g-0 p-4">
