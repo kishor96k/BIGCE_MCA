@@ -20,31 +20,31 @@ const notesData = {
         "JAVA Programming (MCAC105 )": [
             { name: "Unit 1", pdf: "/MCA-I/Sem-I/JAVA/UNIT- I JAVA.pdf" },
             { name: "Unit 2", pdf: "/MCA-I/Sem-I/JAVA/UNIT- II JAVA.pdf" },
-            { name: "Unit 3", pdf: "/MCA-I/Sem-I/JAVA/UNIT- III JAVA.pdf"},
+            { name: "Unit 3", pdf: "/MCA-I/Sem-I/JAVA/UNIT- III JAVA.pdf" },
             { name: "Unit 4", pdf: "/MCA-I/Sem-I/JAVA/UNIT- I JAVA.pdf" },
             { name: "Unit 5", pdf: "/MCA-I/Sem-I/JAVA/UNIT V.pdf" },
         ],
         "Operating System (MCAC101)": [
-          { name: "Unit 1", pdf: "/MCA-I/Sem-I/OS/Unit1-OS.pdf" },
-          { name: "Unit 2", pdf: "" },
-          { name: "Unit 3", pdf: "" },
-          { name: "Unit 4", pdf: "" },
-          { name: "Unit 5", pdf: "" },
-      ],
-      "DBMS (MCAC103 )": [
-        { name: "Unit 1", pdf: "" },
-        { name: "Unit 2", pdf: "" },
-        { name: "Unit 3", pdf: "" },
-        { name: "Unit 4", pdf: "" },
-        { name: "Unit 5", pdf: "" },
-    ],
-    "Probability and statistics (MCAC104 )": [
-      { name: "Unit 1", pdf: "/MCA-I/Sem-I/PS/Unit1.pdf" },
-      { name: "Unit 2", pdf: "/MCA-I/Sem-I/PS/Unit2.pdf" },
-      { name: "Unit 3", pdf: "/MCA-I/Sem-I/PS/Unit3.pdf" },
-      { name: "Unit 4", pdf: "/MCA-I/Sem-I/PS/Unit4.pdf" },
-      { name: "Unit 5", pdf: "/MCA-I/Sem-I/PS/Unit5.pdf" },
-  ],
+            { name: "Unit 1", pdf: "/MCA-I/Sem-I/OS/Unit1-OS.pdf" },
+            { name: "Unit 2", pdf: "" },
+            { name: "Unit 3", pdf: "" },
+            { name: "Unit 4", pdf: "" },
+            { name: "Unit 5", pdf: "" },
+        ],
+        "DBMS (MCAC103 )": [
+            { name: "Unit 1", pdf: "" },
+            { name: "Unit 2", pdf: "" },
+            { name: "Unit 3", pdf: "" },
+            { name: "Unit 4", pdf: "" },
+            { name: "Unit 5", pdf: "" },
+        ],
+        "Probability and statistics (MCAC104 )": [
+            { name: "Unit 1", pdf: "/MCA-I/Sem-I/PS/Unit1.pdf" },
+            { name: "Unit 2", pdf: "/MCA-I/Sem-I/PS/Unit2.pdf" },
+            { name: "Unit 3", pdf: "/MCA-I/Sem-I/PS/Unit3.pdf" },
+            { name: "Unit 4", pdf: "/MCA-I/Sem-I/PS/Unit4.pdf" },
+            { name: "Unit 5", pdf: "/MCA-I/Sem-I/PS/Unit5.pdf" },
+        ],
     },
     "Semester 2": {
         "Object Design & Agile Development (ODAD) (MCAC201 ) ": [
@@ -62,26 +62,26 @@ const notesData = {
             { name: "Unit 5", pdf: "" },
         ],
         "Artificial Intelligent (AI) (MCAC203 )": [
-          { name: "Unit 1", pdf: "" },
-          { name: "Unit 2", pdf: "" },
-          { name: "Unit 3", pdf: "" },
-          { name: "Unit 4", pdf: "" },
-          { name: "Unit 5", pdf: "" },
-      ],
-      " Advance Database Technologies (MCAE204) ": [
-        { name: "Unit 1", pdf: "" },
-        { name: "Unit 2", pdf: "" },
-        { name: "Unit 3", pdf: "" },
-        { name: "Unit 4", pdf: "" },
-        { name: "Unit 5", pdf: "" },
-    ],
-    " Research Methodology (MCAHM205)": [
-      { name: "Unit 1", pdf: "" },
-      { name: "Unit 2", pdf: "" },
-      { name: "Unit 3", pdf: "" },
-      { name: "Unit 4", pdf: "" },
-      { name: "Unit 5", pdf: "" },
-  ],
+            { name: "Unit 1", pdf: "" },
+            { name: "Unit 2", pdf: "" },
+            { name: "Unit 3", pdf: "" },
+            { name: "Unit 4", pdf: "" },
+            { name: "Unit 5", pdf: "" },
+        ],
+        " Advance Database Technologies (MCAE204) ": [
+            { name: "Unit 1", pdf: "" },
+            { name: "Unit 2", pdf: "" },
+            { name: "Unit 3", pdf: "" },
+            { name: "Unit 4", pdf: "" },
+            { name: "Unit 5", pdf: "" },
+        ],
+        " Research Methodology (MCAHM205)": [
+            { name: "Unit 1", pdf: "" },
+            { name: "Unit 2", pdf: "" },
+            { name: "Unit 3", pdf: "" },
+            { name: "Unit 4", pdf: "" },
+            { name: "Unit 5", pdf: "" },
+        ],
     },
     "Semester 3": {
         "Full Stack Development (FSD) (MCAC301)": [
@@ -114,14 +114,14 @@ const notesData = {
             { name: "Unit 5", pdf: "" },
         ],
         " Software Testing and Tools(MCAE305) ": [
-          { name: "Unit 1", pdf: "/MCA-I/Sem-III/STT/STT UNIT I.pdf" },
-          { name: "Unit 2", pdf: "/MCA-I/Sem-III/STT/STT UNIT 2.pdf" },
-          { name: "Unit 3", pdf: "/MCA-I/Sem-III/STT/STT UNIT 3.pdf" },
-          { name: "Unit 4", pdf: "" },
-          { name: "Unit 5", pdf: "" },
-      ],
+            { name: "Unit 1", pdf: "/MCA-I/Sem-III/STT/STT UNIT I.pdf" },
+            { name: "Unit 2", pdf: "/MCA-I/Sem-III/STT/STT UNIT 2.pdf" },
+            { name: "Unit 3", pdf: "/MCA-I/Sem-III/STT/STT UNIT 3.pdf" },
+            { name: "Unit 4", pdf: "" },
+            { name: "Unit 5", pdf: "" },
+        ],
     },
-  
+
 };
 const labManuals = {
     "Semester 1": [
@@ -148,7 +148,7 @@ export default function About() {
     const [selectedNotesSemester, setSelectedNotesSemester] = useState(null);
     const [selectedSubject, setSelectedSubject] = useState(null);
     const [selectedLabSemester, setSelectedLabSemester] = useState(null);
-    
+
     return (
         <div className='container my-5'>
             <h1 className='text-center'>📚 MCA Syllabus & Notes</h1>
@@ -156,8 +156,15 @@ export default function About() {
             {/* MCA Syllabus Section */}
             <div className='card shadow-lg p-4 my-4'>
                 <h3 className='text-secondary'>📜 MCA Syllabus</h3>
-                <a href={syllabusData["MCA Syllabus"][""][0].pdf} download className='btn btn-primary'>📥 Download Syllabus</a>
+                <div className='text-center'>  {/* Ensures normal width */}
+                    <a href={syllabusData["MCA Syllabus"][""][0].pdf} download className='btn btn-primary'>
+                        📥 Download Syllabus
+                    </a>
+                </div>
             </div>
+
+
+
 
             {/* MCA Notes Section */}
             <div className='card shadow-lg p-4 my-4'>
@@ -166,7 +173,7 @@ export default function About() {
                     {Object.keys(notesData).map((semester, index) => (
                         <div className='accordion-item' key={index}>
                             <h2 className='accordion-header'>
-                                <button className='accordion-button' type='button' 
+                                <button className='accordion-button' type='button'
                                     onClick={() => {
                                         setSelectedNotesSemester(selectedNotesSemester === semester ? null : semester);
                                         setSelectedSubject(null);
@@ -178,7 +185,7 @@ export default function About() {
                                 <div className='accordion-body'>
                                     {Object.keys(notesData[semester]).map((subject, idx) => (
                                         <div key={idx} className='mb-3'>
-                                            <button className='btn btn-secondary dropdown-toggle w-100 text-start' 
+                                            <button className='btn btn-secondary dropdown-toggle w-100 text-start'
                                                 onClick={() => setSelectedSubject(selectedSubject === subject ? null : subject)}>
                                                 📌 {subject}
                                             </button>
@@ -210,7 +217,7 @@ export default function About() {
                     {Object.keys(labManuals).map((semester, index) => (
                         <div className='accordion-item' key={index}>
                             <h2 className='accordion-header'>
-                                <button className='accordion-button' type='button' 
+                                <button className='accordion-button' type='button'
                                     onClick={() => setSelectedLabSemester(selectedLabSemester === semester ? null : semester)}>
                                     🖥️ {semester}
                                 </button>
