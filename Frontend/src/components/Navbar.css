@@ -1,26 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
-.nav-link {
-    font-weight: 600;
-    color: #000;
-}
-
-.navbar-toggler:focus {
-    box-shadow: none;
-}
-
-.dropdown>.dropdown-menu {
-    background-color: #FFF;
-    border: none;
-    border-radius: 0;
-}
-
-.lni-grid-alt {
-    font-size: 1.5rem;
-}
-
-.lni-cross-circle {
-    font-size: 2rem;
-}
-
+/* Navbar.css */
+.custom-navbar {
+    background: linear-gradient(90deg, #505354, #f0a549);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 15px 20px;
+  }
+  
+  .navbar-brand {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: black !important;
+    transition: color 0.3s ease-in-out;
+    padding: 10px 15px;
+  }
+  
+  .navbar-nav .nav-item .nav-link:hover {
+    color: #ffdd57 !important;
+  }
+  
+  /* Navbar Logo Styling */
+  .image img {
+    height: 50px;
+    width: 50px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .navbar-brand {
+      font-size: 1.1rem;
+      text-align: left;
+    }
+  
+    .navbar-toggler {
+      border: none;
+      font-size: 1.8rem;
+      color: rgb(48, 236, 183) !important;
+    }
+  
+    .navbar-nav {
+      text-align: center;
+    }
+  
+    .navbar-nav .nav-item {
+      margin: 5px 0;
+    }
+  
+    .navbar-nav .nav-item .nav-link {
+      font-size: 1rem;
+      padding: 8px;
+    }
+  
+    /* Ensure navbar expands properly */
+    .navbar-collapse {
+      background-color: rgba(226, 139, 67, 0.9);
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .custom-navbar {
+      padding: 10px;
+    }
+  
+    .navbar-brand {
+      font-size: 1rem;
+      text-align: left;
+    }
+  
+    .image img {
+      height: 40px;
+      width: 40px;
+    }
+  
+    .navbar-toggler {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .navbar-brand {
+      font-size: 0.9rem;
+    }
+  
+    .navbar-nav .nav-item .nav-link {
+      font-size: 0.9rem;
+      padding: 5px;
+    }
+  
+    .navbar-collapse {
+      text-align: center;
+    }
+  }
+  
