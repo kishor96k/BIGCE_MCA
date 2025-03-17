@@ -1,105 +1,67 @@
-/* Navbar.css */
-.custom-navbar {
-    background: linear-gradient(90deg, #505354, #f0a549);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    padding: 15px 20px;
+/* Navbar Styling */
+.navbar {
+  background: linear-gradient(45deg, #f37609, #807040); /* Attractive gradient */
+  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a modern look */
+}
+
+/* Logo Styling */
+.navbar-brand img {
+  width: 80px; /* Adjusted logo size */
+  height: 60px;
+}
+
+/* College Name Styling */
+.college-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 350px;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgb(8, 8, 8) !important;
+  padding: 10px 18px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+/* Hover Effect */
+.navbar-nav .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+/* Toggle Button Styling */
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .college-name {
+    font-size: 1rem;
+    max-width: 200px;
   }
-  
-  .navbar-brand {
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: black;
+
+  .navbar-nav .nav-link {
+    text-align: center;
   }
-  
-  .navbar-nav .nav-item .nav-link {
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: black !important;
-    transition: color 0.3s ease-in-out;
-    padding: 10px 15px;
+
+  .navbar-brand img {
+    width: 40px;
+    height: 40px;
   }
-  
-  .navbar-nav .nav-item .nav-link:hover {
-    color: #ffdd57 !important;
-  }
-  
-  /* Navbar Logo Styling */
-  .image img {
-    height: 50px;
-    width: 50px;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .image img:hover {
-    transform: scale(1.1);
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 992px) {
-    .navbar-brand {
-      font-size: 1.1rem;
-      text-align: left;
-    }
-  
-    .navbar-toggler {
-      border: none;
-      font-size: 1.8rem;
-      color: rgb(48, 236, 183) !important;
-    }
-  
-    .navbar-nav {
-      text-align: center;
-    }
-  
-    .navbar-nav .nav-item {
-      margin: 5px 0;
-    }
-  
-    .navbar-nav .nav-item .nav-link {
-      font-size: 1rem;
-      padding: 8px;
-    }
-  
-    /* Ensure navbar expands properly */
-    .navbar-collapse {
-      background-color: rgba(226, 139, 67, 0.9);
-      padding: 10px 20px;
-      border-radius: 10px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .custom-navbar {
-      padding: 10px;
-    }
-  
-    .navbar-brand {
-      font-size: 1rem;
-      text-align: left;
-    }
-  
-    .image img {
-      height: 40px;
-      width: 40px;
-    }
-  
-    .navbar-toggler {
-      font-size: 1.5rem;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .navbar-brand {
-      font-size: 0.9rem;
-    }
-  
-    .navbar-nav .nav-item .nav-link {
-      font-size: 0.9rem;
-      padding: 5px;
-    }
-  
-    .navbar-collapse {
-      text-align: center;
-    }
-  }
-  
+}
