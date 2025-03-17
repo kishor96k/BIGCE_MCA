@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 // import student2 from '../../assets/images/sunset-7708222_1280.jpg';
 import './Home.css';
 
+
 const Home = () => {
   return (
     <>
@@ -30,7 +31,9 @@ const Home = () => {
                 </div>
                 <div className="card-body">
                   <p className="card-text">The new batch of MCA 2024-25 is started at 9th sep 2024.</p>
-                  <a href="#" className="btn btn-primary">Read More</a>
+                  <Link to="/news" className='btn btn-info' style={{ color: "#393f81" }}>
+                    Read More
+                  </Link>
                 </div>
               </div>
             </div>
@@ -42,7 +45,9 @@ const Home = () => {
                 </div>
                 <div className="card-body">
                   <p className="card-text">Explore our wide range of academic programs and find the right fit for you.</p>
-                  <a href="#" className="btn btn-primary">Learn More</a>
+                  <Link to="/programs" className='btn btn-dark' style={{ color: "#393f81" }}>
+                    Learn More
+                  </Link>
                 </div>
               </div>
             </div>
@@ -54,7 +59,9 @@ const Home = () => {
                 </div>
                 <div className="card-body">
                   <p className="card-text">Discover the vibrant student life and activities we offer at our college.</p>
-                  <a href="#" className="btn btn-primary">Explore</a>
+                  <Link to="/studentslife" className='btn btn-danger' style={{ color: "#393f81" }}>
+                    Explore
+                  </Link>
                 </div>
               </div>
             </div>
@@ -68,7 +75,9 @@ const Home = () => {
                 </div>
                 <div className="card-body">
                   <p className="card-text">Find out about the admissions process and how to apply to our college.</p>
-                  <a href="#" className="btn btn-primary">Apply Now</a>
+                  <Link to="/admissions" className='btn btn-success' style={{ color: "#393f81" }}>
+                    Apply Now
+                  </Link>
                 </div>
               </div>
             </div>
@@ -80,7 +89,7 @@ const Home = () => {
                 </div>
                 <div className="card-body">
                   <p className="card-text">Meet our dedicated and experienced faculty members.</p>
-                  <Link className="nav-link" to="/faculty"> <a href="#" className="btn btn-primary">Meet Our Faculty</a></Link> 
+                  <Link className="nav-link" to="/faculty"> <a href="#" className="btn btn-primary">Meet Our Faculty</a></Link>
                 </div>
               </div>
             </div>
@@ -92,13 +101,15 @@ const Home = () => {
                 </div>
                 <div className="card-body">
                   <p className="card-text">Connect with our alumni network and see their achievements.</p>
-                  <a href="#" className="btn btn-primary">Connect</a>
+                  <Link to="/alumni" className='btn btn-secondary' style={{ color: "#393f81" }}>
+                    Connect
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
-       
+
       </section>
     </>
   );

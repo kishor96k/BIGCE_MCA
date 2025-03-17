@@ -9,7 +9,12 @@ import Home from "../pages/Home/Home";
 import About from "../pages/About/About";
 import Footer from "../components/Footer";
 import Faculty from "../pages/Faculty/Faculty";
-import Notes from "../pages/StudentCorner/StudentsCorner"
+import StudentCorner from "../pages/StudentCorner/StudentsCorner";
+import Alumni from "../pages/Alumni/Alumni";
+import News from "../pages/News/News";
+import Admissions from "../pages/Admissions/Admissions";
+import Programs from "../pages/Programs/Programs";
+import Studentslife from "../pages/Studentslife/Studentslife";
 
 export default function Routing() {
   return (
@@ -19,12 +24,17 @@ export default function Routing() {
         <main className="flex-grow-1">
           <Routes>
             <Route exact path="/" element={<Home />} />
+            <Route exact path="/alumni" element={<Alumni />} />
+            <Route exact path="/news" element={<News />} />
+            <Route exact path="/admissions" element={<Admissions />} />
+            <Route exact path="/programs" element={<Programs />} />
+            <Route exact path="/studentslife" element={<Studentslife />} />
             <Route exact path="/about" element={<About />} />
             <Route exact path="/blog" element={<Blog />} />
             <Route exact path="/contact" element={<Contact />} />
             <Route exact path="/login" element={<Login />} />
             <Route exact path="/registration" element={<Registration />} />
-            <Route exact path="/studentcorner" element={<Notes />}></Route>
+            <Route exact path="/studentcorner" element={<StudentCorner />}></Route>
             <Route exact path="/faculty" element={<Faculty />}></Route>
           </Routes>
         </main>
