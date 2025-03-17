@@ -9,6 +9,7 @@ import Home from "../pages/Home/Home";
 import About from "../pages/About/About";
 import Footer from "../components/Footer";
 import Faculty from "../pages/Faculty/Faculty";
+import Notes from "../pages/StudentCorner/StudentsCorner"
 
 export default function Routing() {
   return (
@@ -23,6 +24,7 @@ export default function Routing() {
             <Route exact path="/contact" element={<Contact />} />
             <Route exact path="/login" element={<Login />} />
             <Route exact path="/registration" element={<Registration />} />
+            <Route exact path="/studentcorner" element={<Notes />}></Route>
             <Route exact path="/faculty" element={<Faculty />}></Route>
           </Routes>
         </main>

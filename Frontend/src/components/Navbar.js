@@ -65,7 +65,7 @@ export default function Navbar() {
                   Blog
                 </Link>
               </li>
-              <li class="nav-item px-3 px-lg-0 py-1 py-lg-4 nav-item">
+              {/* <li class="nav-item px-3 px-lg-0 py-1 py-lg-4 nav-item">
                 <Link className="nav-link" to="/login">
                   Login
                 </Link>
@@ -73,6 +73,11 @@ export default function Navbar() {
               <li class="nav-item px-3 px-lg-0 py-1 py-lg-4 nav-item">
                 <Link className="nav-link" to="/registration">
                   Registration
+                </Link>
+              </li> */}
+              <li class="nav-item px-3 px-lg-0 py-1 py-lg-4 nav-item">
+                <Link className="nav-link" to="/studentcorner">
+                  Student Corner
                 </Link>
               </li>
             </ul>
