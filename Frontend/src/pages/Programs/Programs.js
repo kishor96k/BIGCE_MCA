@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import './Programs.css';
 import groupphoto from '../../assets/freshersparty/Groupphoto.jpeg';
 import guestphoto from '../../assets/freshersparty/Guestphoto.jpeg';
+import technowinner from '../../assets/technofest/technowinner.png';
+import technowguest from '../../assets/technofest/technoguest.png';
+import projectshow from '../../assets/technofest/prjshowcase.png';
+import showcaseone from '../../assets/technofest/showcaseone.jpg';
 
 const Programs = () => {
   const [activeEvent, setActiveEvent] = useState('freshers');
@@ -43,28 +47,28 @@ const Programs = () => {
       date: "February 28, 2025",
       description:
         "Students showcased their innovative ideas through poster presentations, demonstrating technical excellence.",
-      image: "https://via.placeholder.com/400",
+      image: showcaseone,
     },
     {
       title: "Tech Talks & Guest Lectures",
       date: "February 28, 2025",
       description:
         "Industry experts delivered insightful talks, guiding students on future technology trends.",
-      image: "https://via.placeholder.com/400",
+      image: technowguest,
     },
     {
       title: "Project Showcase",
       date: "February 28, 2025",
       description:
         "Participants displayed their projects, showcasing real-world applications of technology.",
-      image: "https://via.placeholder.com/400",
+      image: projectshow,
     },
     {
       title: "Prize Distribution & Closing Ceremony",
       date: "February 28, 2025",
       description:
         "The event concluded with prize distribution, appreciating the best presentations and innovations.",
-      image: "https://via.placeholder.com/400",
+      image: technowinner,
     },
   ];
 
