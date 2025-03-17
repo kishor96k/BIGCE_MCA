@@ -1,22 +1,21 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { Link } from "react-router-dom";
-import BIGCE from "../assets/images/bigcelogo.png";
-import "../components/Navbar.css";
+import logo from "../assets/images/bigcelogo.png"; // Ensure the path is correct
+import './Navbar.css';
 
-export default function Navbar() {
+const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg py-3 shadow-lg custom-navbar">
-      <div className="container px-4">
-        <div className="d-flex align-items-center">
-          <img src={BIGCE} height={60} width={60} alt="BIGCE Logo" className="me-3" />
-          <span className="navbar-brand mb-0 h1 text-uppercase fw-bold text-light">
-            Bharat Ratna Indira Gandhi College of Engineering, Solapur
-          </span>
-        </div>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div className="container">
+        {/* Logo & Brand Name */}
+        <Link className="navbar-brand d-flex align-items-center" to="/">
+          <img src={logo} alt="Logo" className="logo me-2" />
+          <span className="college-name">Bharat Ratna Indira Gandhi College of Engineering</span>
+        </Link>
 
+        {/* Toggle Button for Mobile */}
         <button
-          className="navbar-toggler border-0 text-light"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -24,47 +23,32 @@ export default function Navbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <i className="lni lni-menu text-light fs-2"></i>
+          <span className="navbar-toggler-icon"></span>
         </button>
 
+        {/* Navbar Links */}
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto text-uppercase">
+          <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <Link className="nav-link text-light fs-5 px-3" to="/" onClick={() => closeNavbar()}>
-                Home
-              </Link>
+              <Link className="nav-link" to="/">Home</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-light fs-5 px-3" to="/about" onClick={() => closeNavbar()}>
-                About
-              </Link>
+              <Link className="nav-link" to="/about">About</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-light fs-5 px-3" to="/contact" onClick={() => closeNavbar()}>
-                Contact
-              </Link>
+              <Link className="nav-link" to="/contact">Contact</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-light fs-5 px-3" to="/blog" onClick={() => closeNavbar()}>
-                Blog
-              </Link>
+              <Link className="nav-link" to="/blog">Blog</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-light fs-5 px-3" to="/studentcorner" onClick={() => closeNavbar()}>
-                Student Corner
-              </Link>
+              <Link className="nav-link" to="/studentcorner">Student Corner</Link>
             </li>
           </ul>
         </div>
       </div>
     </nav>
   );
-}
-
-// Function to close navbar on link click (for mobile)
-const closeNavbar = () => {
-  const navbar = document.getElementById("navbarNav");
-  if (navbar.classList.contains("show")) {
-    navbar.classList.remove("show");
-  }
 };
+
+export default Navbar;

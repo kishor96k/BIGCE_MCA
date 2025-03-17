@@ -15,10 +15,10 @@ Description: This Template is created for Youtubers
 body{
   font-family: "Open Sans";
 }
-
+/* 
 img {
   max-width: 100%; 
-}
+} */
 
 a {
   text-decoration: none;
